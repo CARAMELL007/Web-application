@@ -30,7 +30,7 @@ const ProductList = ({ addToCart }) => {
   return (
     <div className="grid grid-cols-4 gap-4 justify-center items-center">
       {products.map((product) => (
-        <div key={product.id} className="border p-4 rounded-lg shadow-md bg-white bg-opacity-90 mx-auto"> {/* ใช้ mx-auto เพื่อจัดกึ่งกลาง */}
+        <div key={product.id} className="border p-4 rounded-lg shadow-md bg-white bg-opacity-90 mx-auto"> 
           <img
             src={product.image}
             alt={product.name}
