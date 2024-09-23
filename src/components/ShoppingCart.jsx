@@ -1,7 +1,7 @@
 const ShoppingCart = ({ cartItems, addToCart, removeFromCart, clearCart }) => {
-  const shippingFee = 50; // ค่าจัดส่งคงที่ 50 บาท
+  const shippingFee = 100; 
   const total = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
-  const totalWithShipping = total + shippingFee; // รวมค่าจัดส่ง
+  const totalWithShipping = total + shippingFee; 
 
   return (
     <div className="absolute top-0 right-0 mt-5 mr-3 border rounded-lg shadow-md bg-white p-4">
